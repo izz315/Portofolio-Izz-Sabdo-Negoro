@@ -115,6 +115,23 @@
       align-items: center;
       justify-content: center;
     }
+    .dark-mode .card .btn {
+      background-color: maroon;
+      color: white;
+      border: none;
+    }
+    .dark-mode .card .btn:hover {
+      background-color: #800000cc; /* maroon transparan untuk efek hover */
+    }
+    .dark-mode #scrollToTopBtn {
+      background-color: maroon;
+      color: white;
+      border: none;
+    }
+    .dark-mode #scrollToTopBtn:hover {
+      background-color: #800000cc; /* efek hover maroon transparan */
+      color: white;
+    }
   </style>
 </head>
 <body>
@@ -175,7 +192,7 @@
   <div class="container mt-5">
     <!-- Profil -->
     <section id="profil" class="mb-5 text-center" data-aos="fade-up" data-aos-duration="1000">
-      <h2 class="mb-4">Profil Mahasiswa</h2>
+      <h2 class="mb-4"><strong>Profil Mahasiswa</strong></h2>
       <img src="foto izz.png" class="img-fluid rounded-circle mb-3 profile-img" alt="Foto Izz">
       <p><strong>Nama : </strong> Izz Sabdo Negoro</p>
       <p><strong>NIM : </strong> 225410069</p>
@@ -186,7 +203,7 @@
 
     <!-- Soft Skill -->
     <section id="soft-skill" class="mb-5" data-aos="fade-up" data-aos-duration="1000">
-      <h2 class="text-center mb-4">Soft Skill</h2>
+      <h2 class="text-center mb-4"><strong>Soft Skill</strong></h2>
       <div class="row row-cols-md-3 row-cols-lg-5 g-3 justify-content-center">
         <div class="col">
           <div class="card text-center p-3">
@@ -223,7 +240,7 @@
 
     <!-- Hard Skill -->
     <section id="hard-skill" class="mb-5" data-aos="fade-up" data-aos-duration="1000">
-      <h2 class="text-center mb-4">Hard Skill</h2>
+      <h2 class="text-center mb-4"><strong>Hard Skill</strong></h2>
       <div class="row row-cols-2 row-cols-md-3 row-cols-lg-3 g-3 justify-content-center">
         <div class="col">
           <div class="card text-center p-3">
@@ -278,7 +295,7 @@
 
 <!-- Projek -->
       <section id="projek" class="mb-5" data-aos="fade-up" data-aos-duration="1000">
-        <h2 class="text-center mb-4">Projek</h2>
+        <h2 class="text-center mb-4"><strong>Projek</strong></h2>
         <div class="row justify-content-center row-cols-1 row-cols-md-2 g-3">
           
           <div class="col">
@@ -333,12 +350,14 @@
           <div class="col">
             <div class="card text-center p-3 h-100">
               <p class="mb-2">Rancangan Web Pendaftaran Mahasiswa Baru 2025/2026</p>
-              <img src="ss rancangan pmb mobile.png" class="img-fluid mx-auto d-block mt-2 preview-img-lg" alt="Screenshot Proyek Rancangan Mobile PMB">
-              <p class="mb-2 text-justify">
+              <img src="ss rancangan web pmb.png" class="img-fluid mx-auto d-block mt-2 preview-img-lg" alt="Screenshot Proyek Rancangan Mobile PMB">
+              <p class="mb-2 text-justify">Projek tersebut merupakan rancangan antarmuka pengguna (UI) untuk website Pendaftaran Mahasiswa Baru (PMB) UTDI. 
+                Desain ini mencakup beberapa halaman utama seperti beranda, informasi jalur pendaftaran (reguler, prestasi, beasiswa), biaya kuliah, program studi, dan kontak. Di bagian atas terdapat sitemap yang menunjukkan struktur navigasi situs. 
+                Setiap halaman dirancang untuk memberikan informasi yang jelas dan terstruktur, guna memudahkan calon mahasiswa dalam memahami proses serta melakukan pendaftaran secara mandiri.
               </p>
               <div class="mt-auto d-flex justify-content-center gap-2">
-                <a href="" target="_blank" class="btn btn btn-outline-maroon">Figma</a>
-                <a href="" target="_blank" class="btn btn btn-outline-maroon">Prototype</a>
+                <a href="https://www.figma.com/design/kLdE53fYOzA3kqb7UN2Q9g/UI-PMB?node-id=0-1&t=isSz8NyhkB52UL99-1" target="_blank" class="btn btn btn-outline-maroon">Figma</a>
+                <a href="https://www.figma.com/proto/kLdE53fYOzA3kqb7UN2Q9g/UI-PMB?node-id=0-1&t=isSz8NyhkB52UL99-1" target="_blank" class="btn btn btn-outline-maroon">Prototype</a>
               </div>
             </div>
           </div> 
@@ -347,7 +366,7 @@
 
     <!-- Organisasi -->
     <section id="organisasi" class="mb-5" data-aos="fade-up" data-aos-duration="1000">
-      <h2 class="text-center mb-4">Pengalaman Organisasi</h2>
+      <h2 class="text-center mb-4"><strong>Pengalaman Organisasi</strong></h2>
       <div class="row justify-content-center row-cols-1 row-cols-md-2 g-4">
         <div class="col">
           <div class="card text-center h-100">
@@ -378,7 +397,7 @@
 
     <!-- Kepanitiaan -->
     <section id="kepanitiaan" class="mb-5" data-aos="fade-up" data-aos-duration="1000">
-      <h2 class="text-center mb-4">Pengalaman Kepanitiaan</h2>
+      <h2 class="text-center mb-4"><strong>Pengalaman Kepanitiaan</strong></h2>
       <div class="row justify-content-center row-cols-1 row-cols-md-2 g-3">
         <!-- Hanya tampilkan sebagian untuk ringkas -->
         <div class="col"><div class="card text-center h-100"><div class="card-body"><h5>PESONA UTDI 2024</h5><p>Sie Acara & LO</p></div></div></div>
@@ -391,7 +410,7 @@
 
     <!-- Sertifikat -->
     <section id="sertifikat" class="mb-5" data-aos="fade-up" data-aos-duration="1000">
-      <h2 class="text-center mb-4">Sertifikat Keikutsertaan Acara</h2>
+      <h2 class="text-center mb-4"><strong>Sertifikat Keikutsertaan Acara</strong></h2>
       <div class="row justify-content-center row-cols-1 row-cols-md-2 g-3">
          
         <div class="col">
@@ -453,7 +472,7 @@
 
     <!-- Kontak -->
     <section id="kontak" class="mb-5 text-center" data-aos="fade-up" data-aos-duration="1000">
-      <h2>Kontak</h2>
+      <h2><strong>Kontak</strong></h2>
       <div class="d-flex justify-content-center gap-4 mt-3">
         <a href="https://wa.me/62856002765949" class="text-success fs-3" data-bs-toggle="tooltip" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
         <a href="https://www.instagram.com/izxs_n" class="text-danger fs-3" data-bs-toggle="tooltip" title="Instagram"><i class="bi bi-instagram"></i></a>
